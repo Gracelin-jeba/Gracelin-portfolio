@@ -217,8 +217,8 @@ const ProjectCard = ({ project, index, inView }) => {
         {/* Overlay on hover */}
         <motion.div
           initial={false}
-          animate={{ opacity: hovered ? 1 : 0 }}
-          className="absolute inset-0 flex items-center justify-center gap-4"
+          animate={{ opacity: 1 }}
+          className="absolute inset-0 flex items-center justify-center gap-4 md:opacity-0 md:group-hover:opacity-100"
           style={{
             background: "rgba(5,5,13,0.85)",
             backdropFilter: "blur(4px)",
